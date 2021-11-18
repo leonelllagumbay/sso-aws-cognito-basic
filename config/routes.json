@@ -1,0 +1,30 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "sso-aws-cognito-basic.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/verifyToken",
+      "handler": "sso-aws-cognito-basic.verifyToken",
+      "config": {
+        "policies": [],
+        "prefix": ""
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/verifyTokenAPIUser",
+      "handler": "sso-aws-cognito-basic.verifyTokenAPIUser",
+      "config": {
+        "policies": [],
+        "prefix": ""
+      }
+    }
+  ]
+}
